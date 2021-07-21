@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-   
-    {% for item in items %}
+
+{% for item in items %}
         {{ item.item_name }}<br>
         {{ item.location_name }}<br>
         {{ item.item_description }}<br>
         {{ item.created_by }}<br>
         {{ item.date_received }}<br>
     {% endfor %}
-{% endblock %}
+{% endblock %} 
+    
