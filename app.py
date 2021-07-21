@@ -145,6 +145,12 @@ def delete_item(item_id):
     return redirect(url_for("get_items"))
 
 
+@app.route("/get_locations")
+def get_locations():
+    locations = list(mongo.db.locations.find().sort("location_name", 1))
+    return render_template("locations.html", locations=locations)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
