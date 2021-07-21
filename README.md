@@ -1,104 +1,316 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">It sil heve</h1>
 
-Welcome MSierag,
+[View the live project here.](https://msierag.github.io/It-sil-heve/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## Purpose of the website
 
-## Gitpod Reminders
+This is a website for a simple quiz game about the Dutch Elfstedentocht (transl. "Eleven Cities Tour"), a long distance skating event on natural ice. Every time there is a prolonged period of frost, Dutch people anxiously await the decision whether this will be the year there will finally be another Elfstedentocht. The last event took place in early 1997. This year (2021) we came close, but due to the ongoing pandemic it was regretfully decided not to hold the race (which didn't stop individual citizens from skating the route on their own though). 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The purpose of this website is to provide the skating community with a quiz game as entertainment while they wait for the next Elfstedentocht. It is intended to bring the event to the attention of people outside the Dutch skating community. The name "It sil heve" was chosen because the words are synonymous with the Elfstedentocht anticipation. They are Frisian and mean "It will happen", they were used to announce the 1985 event and are also displayed on the Elfstedentoch monument. The website is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential users.
 
-`python3 -m http.server`
+## User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+-   ### User stories
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Visiting User Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+        1. As a visiting user, I want to easily understand the main purpose of the site. 
+        2. As a visiting user, I want to be able to easily navigate throughout the site.
+        3. As a visiting user, I want to know my position in the game.
+        4. As a visiting user, I want to compete.
+        
+-   ### Design
+    -   #### Colour Scheme
+        -   There are eight colours used throughout the site, the first two are main colours and the remaining six are used for accents.
+        ##### Main colours
+           ![Coolors rendering of main colour scheme](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/maincolours.png?raw=true)
+            
+            The colours #41464b and #a1b8d6 were chosen as they approach the palette of the background image on the index.html. The colours are cool to approach the colours seen in the landscape on a Dutch winter day, but with enough gray to not become too harsh when viewed on a screen.
+        ##### Accent colours
+           ![Coolors rendering of effect colourscheme](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/effectcolours.png?raw=true)
+            
+            The colours #3b4044, #3accf, #6e91bf, #90ee90 and #ffb6c1 are accent colours. The first two are used in hover effects and box-shadows. #6e91bf is used on the game.html page to better set apart the answer-prefix. The last two colours are also used on the game.html to indicate whether the correct or incorrect answer has been selected. 
+    -   #### Typography
+        -   The Raleway font is the main font used throughout the whole website with Sans Serif as the fallback font in case the font isn't being imported into the site correctly. Raleway was chosen as it is an elegant sans-serif typeface family.
+    -   #### Imagery
+        -   The large background image on the index.html is representative of long-distance skating on natural ice in the Netherlands: large, open space with a few people. It provides a very serene scene, which was used as the guiding sense for the rest of the project. 
 
-A blue button should appear to click: _Make Public_,
+*   ### Wireframes
 
-Another blue button should appear to click: _Open Browser_.
+    -   Home page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevehome.png?raw=true)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    -   Game page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevegame.png?raw=true)
 
-To log into the Heroku toolbelt CLI:
+    -   End of game page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilheveendgame.png?raw=true)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   Scoreboard page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevescoreboard.png?raw=true)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    -   Mobile wireframes - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevesmartphone.png?raw=true)
 
-------
+    -   Tablet wireframes - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
 
-## Release History
+## Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Existing features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### Page specific features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+##### Home page
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   Background image which conveys the atmosphere of skating on natural ice in the Netherlands. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+-   Name of the game and the topic are clearly visible. Text is intentionally kept to a minimum so as not to detract from the serene atmosphere of the background image.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-   Call to action button labelled "How to Play" which when clicked opens a modal with instructions to the game.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+-   Call to action button labelled "Let's Play" which when clicked opens the game page. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+-   Call to action button labelled "Scoreboard" which when clicked opens the scoreboard page.  
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+##### Game page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+-   Top left of the screen holds a section labelled "Question" which shows the number question the current question is out of the maximum of ten questions in every game.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   Top right of the screen holds a section labelled "Score" which shows the number of points accumulated in the game so far.  
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   Middle section holds the question and a group of cards underneath which display the four possible answers to each question. The cards serve as buttons and have a hover effect. When selected the normally white background of the card changes colour to indicate whether the selection was correct or not.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   Below the answers is a call to action button labelled "Home" which when clicked opens the home page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+##### End of game page
 
-------
+-   Page loads automatically after 10 questions have been answered. 
 
-## FAQ about the uptime script
+-   The total number of points scored is clearly stated.
 
-**Why have you added this script?**
+-   The user is prompted to enter their name in the input box in order to save their score. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+-   The save button below the input box is disabled until a character has been entered into the input box.
 
-**How will this affect me?**
+-   Call to action button labelled "Play again" which when clicked opens the game page. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   Call to action button labelled "Home" at the bottom of the scoreboard which when clicked opens the home page.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+##### Scoreboard page
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-   Scoreboard is shown with the header "Scoreboard" and a maximum of 5 scores to be displayed.
 
-**So….?**
+-   Call to action button labelled "Home" at the bottom of the scoreboard which when clicked opens the home page. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Future features
 
-**Can I opt out?**
+-   A Dutch version of the site so it will serve the Dutch general public as well. This was not done due to time constraints. 
+-   A background information section which will give some instant information without having to search for it elsewhere online. 
+-   More questions to create a greater variation in the quiz.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Technologies Used
+
+### Languages Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+
+### Frameworks, Libraries & Programs Used
+
+1. [Bootstrap 5:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts was used to import the 'Raleway' font into the style.css file which is used throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used to add the icons to the navigation and modal buttons used throughout the project.
+1. [jQuery:](https://jquery.com/)
+    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
+1. [TinyJPG](https://tinyjpg.com/) 
+    - TinyJPG was used to reduce image file sizes.
+1. [Coolors](https://coolors.co/)
+    - Coolors was used to generate the palette used throughout the site.
+
+## Testing
+
+### Validation 
+
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+    - Home - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/homehtml.png?raw=true)
+    - Game - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/gamehtml.png?raw=true)
+    - Endgame - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/endgamehtml.png?raw=true)
+    - Scoreboard - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scoreboardhtml.png?raw=true)
+
+    No errors or warnings were given for the HTML code.
+    
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+
+    One error and one warning were given for the CSS code - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/cssbefore.png?raw=true)
+    The error referred to the fact that for the hover effect on the buttons transform: scale(0.3rem) was used. Rem is not allowed as a value for transform. Correcting this to transform: scale(1.3) resolved the error.
+    
+    The warning referred to the fact that the W3C CSS Validator cannot check linked/imported files in direct input. Style.css has an import link for the Google Font of 'Raleway' and the link to the background image for the home page. This seems to be a minor issue inherent to the way the validator is set up, but as it doesn't impact the function of the site I've decided to leave it as is. - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/cssafter.png?raw=true)  
+
+-  [JSHint](https://jshint.com/)     
+    The linter gave no fatal errors, only warnings. Most of these pertained to the fact that the syntax used is only available in ES6. As the code also doesn't produce any errors in ChromeDevTools I desiced to leave the code as it is. 
+    
+    Script.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scriptjs.png?raw=true) 
+    
+    Endgame.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/endgamejs.png?raw=true)
+    
+    Scoreboard.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scoreboardjs.png?raw=true) 
+
+### Google Lighthouse
+
+I used Google Lighthouse to audit the site's performance, accessibility, use of best practices and search engine optimization.
+
+Testing resulted in the following [score](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/lighthouse/lighthouse.png?raw=true):
+-   Performance: 98%
+-   Accessibility: 100%
+-   Best Practices: 100%
+-   SEO: 100%
+
+**Performance** - Two suggested improvements involved removing or altering CSS and JavaScript elements which are included in Bootstrap. I decided against tampering with this. 
+
+### Responsiveness testing
+
+To test the responsiveness of the site [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://responsivedesignchecker.com/) were used. 
+Screenshots for the home page and the game page are included. The end game and scoreboard pages with their minimal content followed the same line as the other two pages.
+
+#### Home page
+Desktop 1920x1080 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/desktop1920x1080.png?raw=true)
+
+Notebook 1366x768 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/notebook1366x768.png?raw=true)
+
+Tablet 800x1280 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/tablet800x1280.png?raw=true)
+
+Tablet 768x1024 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/tablet768x1024.png?raw=true)
+
+Smartphone 414x736 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/smartphone414x736.png?raw=true)
+
+Smartphone 320x568 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/smartphone320x568.png?raw=true)
+
+#### Game page
+Desktop 1920x1080 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game1920x1080.png?raw=true)
+
+Notebook 1366x768 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game1366x768.png?raw=true)
+
+Tablet 800x1280 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game800x1280.png?raw=true)
+
+Tablet 768x104 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game768x1024.png?raw=true)
+
+Smartphone 414x736 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game414x736.png?raw=true)
+
+Smartphone 320x568 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game320x568.png?raw=true)
+
+#### Conclusions
+Only on the smallest smartphone screen (320x480) did the background image interfere with the text on the buttons.  [Screensizemap](https://screensizemap.com/) was consulted to determine the popularity of this screen size.
+The popularity listed for this type of screen hovers around 2% and seems to concern smartphones which can be considered at the end of their lifecycle. 
+It is listed as a known issue.   
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### Visiting User Goals
+
+    1. As a visiting user, I want to easily understand the main purpose of the site.
+
+        1. Upon entering the site, users are automatically greeted with the clean and easily readable page which contains the title heading "It sil heve" and underneath that the subheading "Elfstedentocht quiz" with three buttons to go to the page of their choice. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnhowtoplay.png?raw=true)
+        2. Underneath the titles are three buttons labelled "How to play?", "Let's play" and "Scoreboard". 
+        3. Text has intentionally been kept to an absolute minimum.
+        
+    2. As a visiting user, I want to be able to easily navigate throughout the site.
+
+        1. The buttons on the home page provide the user with clearly marked links to the respective pages. These buttons are the same across all pages. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
+        2. The home button is located at the bottom of every screen [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true), except of course the home page itself.
+        3. The game page automatically opens into the end of game page upon completion of the game [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame.png?raw=true)
+        4. After submitting a username and saving their score, the scoreboard page also loads automatically [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame2.png?raw=true) and [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/scoreboard.png?raw=true)
+                      
+    3. As a visiting user, I want to know my position in the game.
+        
+        1. On the game page the user is presented with the question counter in the top left hand corner. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/play.png?raw=true)
+        2. The counter shows what question out of ten question in a game the user is currently playing.
+        3. A new question is automatically loaded one second after submitting the answer to the previous question.
+        4. An easily distinguishable "Home" button sits at the bottom of the screen should the user wish to abort the game and return to the home page [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true)
+        5. At the end of the game, the end of game page is automatically opened and the user is urged to submit their name to be added to the scoreboard. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame.png?raw=true) 
+                   
+    4. As a visiting user, I want to compete.
+        
+        1. On the home page, the user is first presented with a button labelled "How to play?" [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnhowtoplay.png?raw=true) which when clicked opens a modal with instructions [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/modal.png?raw=true)        
+        2. On the home page, the user is presented with a button labelled "Let's Play" which when clicked opens the game page [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
+        3. The game page loads questions automatically  [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/play.png?raw=true)
+        4. Correctly answered questions are noted in [this](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/correct.png?raw=true) manner while incorrectly answered questions are noted in [this](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/incorrect.png?raw=true) manner.
+        4. At the end of the game the user is prompted to enter their name and submit their score.
+        5. Alternatively, the user can view the scoreboard or play again to improve their score.  
+
+### Known Issues
+
+-   On mobile devices with a screen narrower than 360px the contents of the card section on index.html pushed out of alignment.
+    -   Text and text on buttons disappears from view as a result.
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [It-sil-heve repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://msierag.github.io/It-sil-heve/) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [It-sil-heve repository](https://github.com/)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [It-sil-heve repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
----
+## Credits
 
-Happy coding!
+### Code
+
+-   [Bootstrap5](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+
+-   [YouTube](https://www.youtube.com/watch?v=MxrGPP4F8Sc): The game page with its JavaScript functionality was copied from this tutorial.   
+
+-   I feel compelled to mention I spend countless hours wading through repositories and tutorials. I learned so much and was influenced by all of it. So thank you to all who have shared JavaScript code relating to quiz games online, this project would not have been possible without you.
+
+### Content
+
+-   Inspiration for the questions was taken from [Wikipedia](https://en.wikipedia.org/wiki/Elfstedentocht).
+
+### Media
+
+-   Background image for the home page by Steve Photography on [Shutterstock](https://www.shutterstock.com/image-photo/ice-skating-on-gouwzee-netherlands-86205925)
+
+### Acknowledgements
+
+-  Code Institure Student Care, Alexander Farrell for invaluable help.
+
+-  Code Institue assessors for understanding and leniency. 
+
+-  Friends and family for feedback and helpful suggestions.
