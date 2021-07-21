@@ -26,7 +26,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_items') }}">Home</a></li>
                     <li><a href="">Items</a></li>
-                    <li><a href="">New Item</a></li>
+                    <li><a href="{{ url_for('add_item') }}">New Item</a></li>
                     <li><a href="">Locations</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}">Log out</a></li>
@@ -43,7 +43,7 @@
             </li>
             <li><a href="{{ url_for('get_items') }}">Home</a></li>
             <li><a href="">Items</a></li>
-            <li><a href="">New Item</a></li>
+            <li><a href="{{ url_for('add_item') }}">New Item</a></li>
             <li><a href="">Locations</a></li>
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="{{ url_for('logout') }}">Log out</a></li>        
