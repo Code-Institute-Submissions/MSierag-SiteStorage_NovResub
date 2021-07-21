@@ -101,9 +101,22 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_item")
+@app.route("/add_item", methods=["GET", "POST"])
 def add_item():
-    return render_template("add_item.html")
+    if request.method == "POST":
+        item = {
+            "location_name": request.form.get("location_name"),
+            "item_name": request.form.get("item_name"),
+            "item_description": request.form.get("item_description"),
+            "date_received": request.form.get("date_received"),
+            "created_by": session["user"]
+        }
+        mongo.db.tasks.insert_one(item)
+        flash("Item added successfully")
+        return redirect(url_for("get_items"))
+
+    locations = mongo.db.locations.find().sort("location_name", 1)
+    return render_template("add_item.html", locations=locations)
 
 
 if __name__ == "__main__":
