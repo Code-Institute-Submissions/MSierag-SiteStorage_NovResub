@@ -151,6 +151,19 @@ def get_locations():
     return render_template("locations.html", locations=locations)
 
 
+@app.route("/add_locaton", methods=["GET", "POST"])
+def add_location():
+    if request.method == "POST":
+        location = {
+            "location_name": request.form.get("location_name")
+        }
+        mongo.db.locations.insert_one(location)
+        flash("New storage location added")
+        return redirect(url_for("get_locations"))
+
+    return render_template("add_location.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
