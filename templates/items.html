@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Storage</title>
+</head>
+<body>
+    
+    {% for item in items %}
+        {{ item.item_name }}<br>
+        {{ item.location_name }}<br>
+        {{ item.item_description }}<br>
+        {{ item.created_by }}<br>
+        {{ item.date_received }}<br>
+    {% endfor %}
+
+
+</body>
+</html>
