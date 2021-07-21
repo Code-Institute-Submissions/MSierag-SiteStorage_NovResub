@@ -12,7 +12,11 @@
                 <select id="location_name" name="location_name" class="validate" required>
                     <option value="" disabled selected>Choose storage location</option>
                     {% for location in locations %}
-                        <option value="{{ location.location_name }}">{{ location.location_name }}</option>
+                            {% if location.location_name == item.location_name %}
+                                <option value="{{ location.location_name }}" selected>{{ location.location_name }}</option>
+                            {% else %}
+                                <option value="{{ location.location_name }}">{{ location.location_name }}</option>
+                            {% endif %}
                     {% endfor %}
                 </select>
                 <label for="location_name">Storage location</label>
@@ -23,7 +27,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                 <input id="item_name" name="item_name" minlength="4" maxlength="50"
-                    type="text" class="validate" required>
+                value="{{ item.item_name }}" type="text" class="validate" required>
                 <label for="item_name">Item Name</label>
             </div>
         </div>
@@ -32,7 +36,9 @@
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="item_description" name="item_description" minlength="5"
-                    maxlength="200" class="materialize-textarea validate" required></textarea>
+                    maxlength="200" class="materialize-textarea validate" required>
+                    {{- item.item_description -}}
+                </textarea>
                 <label for="item_description">Item Description</label>
             </div>
         </div>
@@ -40,7 +46,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                <input id="date_received" name="date_received" type="text" class="datepicker validate" required>
+                <input id="date_received" name="date_received" type="text" value="{{ item.date_received }}" class="datepicker validate" required>
                 <label for="date_received">Date received</label>
             </div>
         </div>
