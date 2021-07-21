@@ -164,6 +164,20 @@ def add_location():
     return render_template("add_location.html")
 
 
+@app.route("/edit_location/<location_id>", methods=["GET", "POST"])
+def edit_location(location_id):
+    if request.method == "POST":
+        submit = {
+            "location_name": request.form.get("location_name")
+        }
+        mongo.db.locations.update({"_id": ObjectId(location_id)}, submit)
+        flash("Location updated successfully")
+        return redirect(url_for("get_locations"))
+
+    location = mongo.db.locations.find_one({"_id": ObjectId(location_id)})
+    return render_template("edit_location.html", location=location)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
