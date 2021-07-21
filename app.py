@@ -111,12 +111,31 @@ def add_item():
             "date_received": request.form.get("date_received"),
             "created_by": session["user"]
         }
-        mongo.db.tasks.insert_one(item)
+        mongo.db.items.insert_one(item)
         flash("Item added successfully")
         return redirect(url_for("get_items"))
 
     locations = mongo.db.locations.find().sort("location_name", 1)
     return render_template("add_item.html", locations=locations)
+
+
+@app.route("/edit_item/<item_id>", methods=["GET", "POST"])
+def edit_item(item_id):
+    if request.method == "POST":
+        submit = {
+            "location_name": request.form.get("location_name"),
+            "item_name": request.form.get("item_name"),
+            "item_description": request.form.get("item_description"),
+            "date_received": request.form.get("date_received"),
+            "created_by": session["user"]
+        }
+        mongo.db.items.update({"_id": ObjectId(item_id)}, submit)
+        flash("Item updated successfully")
+        return redirect(url_for("get_items"))
+
+    item = mongo.db.items.find_one({"_id": ObjectId(item_id)})
+    locations = mongo.db.locations.find().sort("location_name", 1)
+    return render_template("edit_item.html", item=item, locations=locations)
 
 
 if __name__ == "__main__":
