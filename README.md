@@ -58,6 +58,7 @@ The purpose of this app is to provide an easy to use platform for a construction
 ## Features
 -   Navbar at the top of the page is not visible on the Welcome page, but on all subsequent pages. The Register and Login pages 
     show no buttons on the navbar yet. Once the user is successfully logged in the navbar displays the buttons "Home", "New item", "Locations" and "Logout". The buttons have a hover effect.
+-   Delete functions throughout the site are intentionally without defensive programming. 
 
 ### Existing features
 
@@ -95,6 +96,14 @@ The purpose of this app is to provide an easy to use platform for a construction
         -if the login was successfull, the user is redirected to the Home page with a flash message of "Welcome (username)" 
         -if the login was unsuccessfull, the user is redirected to the Login page with a flash message of "Username and / or password incorrect".
 
+##### Profile page
+
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
+
+-   Middle section is formed by a card which displays the message "(username) logged in successfully".  
+
+-   Below this section is a simple statement invites the user to select a task above. 
+
 ##### Home page
 
 -   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
@@ -104,39 +113,71 @@ The purpose of this app is to provide an easy to use platform for a construction
 -   Below the title is a search field with two buttons to the right, Reset and Search. This allows the user to search the    items listed below.
 
 -   Middle section holds a collapsible  which displays all items in the database. The collapsed items displays a down caret, two buttons Edit and Used, the item name and the date it was received. When the user selects the down caret, the unfolded item shows the storage location, the item description and who took receipt of it. 
+    -   The Used button serves as the delete function. When pushed, the item is deleted from the database and the user receives a flash message of "Item deleted"
+    -   The Edit button when pushed redirects the user to the Edit Item page
 
--   The Used button serves as the delete function. When pushed, the item is deleted from the database and the user receives a flash message of "Item deleted"
+##### New Item page
 
--   The Edit button when pushed redirects the user to the Edit Item page
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
 
+-   Below the navbar the page title of Add Item is displayed.
 
+-   Middle section holds a form with fields to be completed by the user to add a new item to the database. The first field is a dropdown menu for the storage location, followed by Item Name, Item Description and Date received. The latter is a date picker. 
 
+-   At the bottom of the form is a large button labelled Add item which when pushed has two possible outcomes:
+    -if all fields were filled out correctly, the user is redirected to the Home page where the item has been added to the list and a flash message reads "Item added successfully"
+    -if all fields were not filled out correctly, the user is alerted to the missing or incorrect information by the validation functionality.
 
-##### End of game page
+##### Edit Item page
 
--   Page loads automatically after 10 questions have been answered. 
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
 
--   The total number of points scored is clearly stated.
+-   Below the navbar the page title of Edit Item is displayed.
 
--   The user is prompted to enter their name in the input box in order to save their score. 
+-   Middle section holds a form with prefilled fields to be edited by the user to edite the item in the database.
 
--   The save button below the input box is disabled until a character has been entered into the input box.
+-   At the bottom of the form there are two large buttons labelled Cancel and Edit Item 
+    -Cancel takes the user back to the Home page 
+    -Edit Item will, if all fields were filled out correctly, redirect the user to Home page with a flash message of "Item updated successfully" 
+    -Edit Item will, if all fields were not filled out correctly, alert the user to the missing or incorrect information by the validation functionality.
 
--   Call to action button labelled "Play again" which when clicked opens the game page. 
+##### Locations page
 
--   Call to action button labelled "Home" at the bottom of the scoreboard which when clicked opens the home page.
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
 
-##### Scoreboard page
+-   Below the navbar the page title of Manage Locations is displayed.
 
--   Scoreboard is shown with the header "Scoreboard" and a maximum of 5 scores to be displayed.
+-   Below the title is a large button labelled Add Location which when pushed redirects the user to the Add Location page.
 
--   Call to action button labelled "Home" at the bottom of the scoreboard which when clicked opens the home page. 
+-   Middle section holds a collection of cards which display all locations currently in the database. The cards have two buttons Delete and Edit 
+    -   The Delete button deletes the location from the database and the user receives a flash message of "Location deleted successfully"
+    -   The Edit button when pushed redirects the user to the Edit Location page
+
+##### Add location page
+
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
+
+-   Below the navbar the page title of Add Location is displayed.
+
+-   Middle section holds a form with a single field to be completed by the user to add a new location to the database. 
+
+-   At the bottom of the form is a large button labelled Add location which when pushed redirects the user to the Locations page where the new location has been added and a flash message of "New storage location added".
+
+##### Edit location page
+
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
+
+-   Below the navbar the page title of Edit Location is displayed.
+
+-   Middle section holds a form with a single prefilled field to be completed by the user to edit the current location in the database. 
+
+-   At the bottom of the form there are two large buttons labelled Cancel and Edit Item 
+    -Cancel takes the user back to the Locations page 
+    -Edit Location will redirect the user to Locations page with a flash message of "Location updated successfully" 
 
 ### Future features
 
--   A Dutch version of the site so it will serve the Dutch general public as well. This was not done due to time constraints. 
--   A background information section which will give some instant information without having to search for it elsewhere online. 
--   More questions to create a greater variation in the quiz.
+-   Currently no future features are envisioned.
 
 ## Technologies Used
 
