@@ -18,3 +18,13 @@
     margin: 5px;
     line-height: 42px;
 }
+
+.title {
+    font-family: Oxygen-Sans;
+    font-size: 4.5rem;
+}
+
+#welcome-card {
+    font-size: 30px;
+    line-height: 2;
+}

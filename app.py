@@ -21,6 +21,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+def welcome():
+    return render_template("welcome.html")
+
+
 @app.route("/get_items")
 def get_items():
     items = list(mongo.db.items.find())
