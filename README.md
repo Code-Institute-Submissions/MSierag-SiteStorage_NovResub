@@ -56,32 +56,61 @@ The purpose of this app is to provide an easy to use platform for a construction
     -   Edit Location page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
 
 ## Features
+-   Navbar at the top of the page is not visible on the Welcome page, but on all subsequent pages. The Register and Login pages 
+    show no buttons on the navbar yet. Once the user is successfully logged in the navbar displays the buttons "Home", "New item", "Locations" and "Logout". The buttons have a hover effect.
 
 ### Existing features
 
 #### Page specific features
 
+##### Welcome page
+
+-   Large title welcomes visitor to SiteStorage. 
+
+-   A card the text Please register / login below is displayed underneath the title.
+
+-   Call to action button labelled "Register" which when clicked opens the Register page.
+
+-   Call to action button labelled "Login" which when clicked opens the Login page. 
+
+-   The page is intentionally without a navbar, to ensure only registered users enter the site.  
+
+##### Register page
+
+-   Top of the screen shows the navbar which is empty apart from the logo, no further buttons visible to visitors.
+
+-   Middle section holds a form with fields for Username and Password prefixed by an icon.
+
+-   Below the fields is a call to action button labelled "Register" which when clicked has two options:
+        -if the registration was successfull, the user is redirected to the Profile page with a flash message of "You are now registered"
+        -if the registration was unsuccessfull, the user receives a flash message "Username already exists" and is redirected to the Registration page.
+
+##### Login page
+
+-   Top of the screen shows the navbar which is empty apart from the logo, no further buttons visible to visitors.
+
+-   Middle section holds a form with fields for Username and Password prefixed by an icon.  
+
+-   Below the fields is a call to action button labelled "Login" which when clicked has two options:
+        -if the login was successfull, the user is redirected to the Home page with a flash message of "Welcome (username)" 
+        -if the login was unsuccessfull, the user is redirected to the Login page with a flash message of "Username and / or password incorrect".
+
 ##### Home page
 
--   Background image which conveys the atmosphere of skating on natural ice in the Netherlands. 
+-   Top of the screen shows the navbar which now show the buttons "Home", "New item", "Locations" and "Logout".
 
--   Name of the game and the topic are clearly visible. Text is intentionally kept to a minimum so as not to detract from the serene atmosphere of the background image.
+-   Below the navbar the page title of All Items is displayed.
 
--   Call to action button labelled "How to Play" which when clicked opens a modal with instructions to the game.
+-   Below the title is a search field with two buttons to the right, Reset and Search. This allows the user to search the    items listed below.
 
--   Call to action button labelled "Let's Play" which when clicked opens the game page. 
+-   Middle section holds a collapsible  which displays all items in the database. The collapsed items displays a down caret, two buttons Edit and Used, the item name and the date it was received. When the user selects the down caret, the unfolded item shows the storage location, the item description and who took receipt of it. 
 
--   Call to action button labelled "Scoreboard" which when clicked opens the scoreboard page.  
+-   The Used button serves as the delete function. When pushed, the item is deleted from the database and the user receives a flash message of "Item deleted"
 
-##### Game page
+-   The Edit button when pushed redirects the user to the Edit Item page
 
--   Top left of the screen holds a section labelled "Question" which shows the number question the current question is out of the maximum of ten questions in every game.
 
--   Top right of the screen holds a section labelled "Score" which shows the number of points accumulated in the game so far.  
 
--   Middle section holds the question and a group of cards underneath which display the four possible answers to each question. The cards serve as buttons and have a hover effect. When selected the normally white background of the card changes colour to indicate whether the selection was correct or not.
-
--   Below the answers is a call to action button labelled "Home" which when clicked opens the home page.
 
 ##### End of game page
 
@@ -116,26 +145,25 @@ The purpose of this app is to provide an easy to use platform for a construction
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python](https://www.python.org/)
 
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 5:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts was used to import the 'Raleway' font into the style.css file which is used throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used to add the icons to the navigation and modal buttons used throughout the project.
+1. [MaterializeCSS:](https://materializecss.com/)
+    - MaterializeCSS was used to assist with the responsiveness and styling of the website.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+    - jQuery was used for the functionality of the MaterializeCSS components.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
+1. [MongoDB:](https://www.mongodb.com/)
+    - MongoDB is used for the database. 
+1. [Heroku:](https://heroku.com/)
+    - Herokuapp is the platform used to display the project after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
-1. [TinyJPG](https://tinyjpg.com/) 
-    - TinyJPG was used to reduce image file sizes.
 1. [Coolors](https://coolors.co/)
     - Coolors was used to generate the palette used throughout the site.
 
