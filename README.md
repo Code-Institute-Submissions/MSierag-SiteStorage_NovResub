@@ -1,6 +1,7 @@
 <h1 align="center">SiteStorage</h1>
 
 [View the live project here.](https://msierag.github.io/It-sil-heve/)
+[or view it here]() 
 
 ## Purpose of the website
 
@@ -14,10 +15,10 @@ The purpose of this app is to provide an easy to use platform for a construction
 
     -   #### Visiting User Goals
 
-        1. As a visiting user, I want to easily understand the main purpose of the site. 
-        2. As a visiting user, I want to be able to easily navigate throughout the site.
-        3. As a visiting user, I want to know my position in the game.
-        4. As a visiting user, I want to compete.
+        1. As an owner, I want to keep out unregistered visitors
+        2. As a visiting user, I want to be able to register/login to use the site. 
+        3. As a registered user, I want to be able to easily navigate throughout the site.
+        4. As a registered user, I want to be able to perform full CRUD functionality.        
         
 -   ### Design
     -   #### Colour Scheme
@@ -34,6 +35,7 @@ The purpose of this app is to provide an easy to use platform for a construction
         -   The font used throughout the site are the standard fonts defined by MaterializeCSS.
 
 *   ### Wireframes
+Due to the high number of pages and limited content on them I decided against making creating wireframes in various formats as there would be very little difference between them.
 
     -   Welcome page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevehome.png?raw=true)
 
@@ -215,71 +217,23 @@ The purpose of this app is to provide an easy to use platform for a construction
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
-    - Home - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/homehtml.png?raw=true)
-    - Game - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/gamehtml.png?raw=true)
-    - Endgame - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/endgamehtml.png?raw=true)
-    - Scoreboard - [Result](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scoreboardhtml.png?raw=true)
-
-    No errors or warnings were given for the HTML code.
-    
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
-
-    One error and one warning were given for the CSS code - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/cssbefore.png?raw=true)
-    The error referred to the fact that for the hover effect on the buttons transform: scale(0.3rem) was used. Rem is not allowed as a value for transform. Correcting this to transform: scale(1.3) resolved the error.
-    
-    The warning referred to the fact that the W3C CSS Validator cannot check linked/imported files in direct input. Style.css has an import link for the Google Font of 'Raleway' and the link to the background image for the home page. This seems to be a minor issue inherent to the way the validator is set up, but as it doesn't impact the function of the site I've decided to leave it as is. - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/cssafter.png?raw=true)  
-
--  [JSHint](https://jshint.com/)     
-    The linter gave no fatal errors, only warnings. Most of these pertained to the fact that the syntax used is only available in ES6. As the code also doesn't produce any errors in ChromeDevTools I desiced to leave the code as it is. 
-    
-    Script.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scriptjs.png?raw=true) 
-    
-    Endgame.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/endgamejs.png?raw=true)
-    
-    Scoreboard.js - [Results](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/validation/scoreboardjs.png?raw=true) 
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)  
+-   [JSHint](https://jshint.com/)   
+    No errors or warnings were given for the respective codes.
 
 ### Google Lighthouse
 
 I used Google Lighthouse to audit the site's performance, accessibility, use of best practices and search engine optimization.
 
 Testing resulted in the following [score](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/lighthouse/lighthouse.png?raw=true):
--   Performance: 98%
--   Accessibility: 100%
--   Best Practices: 100%
--   SEO: 100%
-
-**Performance** - Two suggested improvements involved removing or altering CSS and JavaScript elements which are included in Bootstrap. I decided against tampering with this. 
+-   Performance: 94%
+-   Accessibility: 92%
+-   Best Practices: 93%
+-   SEO: 91%
 
 ### Responsiveness testing
 
 To test the responsiveness of the site [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://responsivedesignchecker.com/) were used. 
-Screenshots for the home page and the game page are included. The end game and scoreboard pages with their minimal content followed the same line as the other two pages.
-
-#### Home page
-Desktop 1920x1080 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/desktop1920x1080.png?raw=true)
-
-Notebook 1366x768 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/notebook1366x768.png?raw=true)
-
-Tablet 800x1280 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/tablet800x1280.png?raw=true)
-
-Tablet 768x1024 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/tablet768x1024.png?raw=true)
-
-Smartphone 414x736 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/smartphone414x736.png?raw=true)
-
-Smartphone 320x568 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/smartphone320x568.png?raw=true)
-
-#### Game page
-Desktop 1920x1080 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game1920x1080.png?raw=true)
-
-Notebook 1366x768 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game1366x768.png?raw=true)
-
-Tablet 800x1280 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game800x1280.png?raw=true)
-
-Tablet 768x104 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game768x1024.png?raw=true)
-
-Smartphone 414x736 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game414x736.png?raw=true)
-
-Smartphone 320x568 - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/responsiveness/game320x568.png?raw=true)
 
 #### Conclusions
 Only on the smallest smartphone screen (320x480) did the background image interfere with the text on the buttons.  [Screensizemap](https://screensizemap.com/) was consulted to determine the popularity of this screen size.
@@ -288,38 +242,29 @@ It is listed as a known issue.
 
 ### Testing User Stories from User Experience (UX) Section
 
+-   #### Owner Goal
+    1. As an owner, I want to keep out unregistered visitors to the site.
+        1. The Welcome page has only two buttons which allow a visitor to either register or login. There is no navigation bar to ensure there is no other way to enter the site than through these two buttons. 
+       
 -   #### Visiting User Goals
 
-    1. As a visiting user, I want to easily understand the main purpose of the site.
+    2. As a visiting user, I want to be able to register/login to use the site.
 
-        1. Upon entering the site, users are automatically greeted with the clean and easily readable page which contains the title heading "It sil heve" and underneath that the subheading "Elfstedentocht quiz" with three buttons to go to the page of their choice. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnhowtoplay.png?raw=true)
-        2. Underneath the titles are three buttons labelled "How to play?", "Let's play" and "Scoreboard". 
+        1. Upon reaching the Welcome page, users are automatically greeted with the clean and easily readable page which contains the title heading "Welcome to SiteStorage" and underneath that the subheading "Please register / login" with two buttons to go to the page of their choice. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnhowtoplay.png?raw=true)
+        2. Pushing these buttons leads to the corresponding page where the user can still change their mind and be redirected to the other page. There is no button on either of those pages leading back to the Welcome page as casual visitors are not intended to even reach this app. 
         3. Text has intentionally been kept to an absolute minimum.
         
-    2. As a visiting user, I want to be able to easily navigate throughout the site.
+    3. As a visiting user, I want to be able to easily navigate throughout the site.
 
-        1. The buttons on the home page provide the user with clearly marked links to the respective pages. These buttons are the same across all pages. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
-        2. The home button is located at the bottom of every screen [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true), except of course the home page itself.
-        3. The game page automatically opens into the end of game page upon completion of the game [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame.png?raw=true)
-        4. After submitting a username and saving their score, the scoreboard page also loads automatically [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame2.png?raw=true) and [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/scoreboard.png?raw=true)
+        1. The buttons on the navbar provide the user with clearly marked links to the respective pages. These buttons are the same across all pages. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
+        2. The various buttons on the respective pages are clearly marked and provide the expected functionality. The functionality is confirmed by flash messages. Numerous screenshots can be found in [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true).
+        
+    4. As a registered user, I want to be able to perform full CRUD functionality.
+        
+        1. CRUD functionality is provided for items and locations. Once logged in the user has access to the buttons on the navbar which provide the desired functionality reinforced by flash messages. Numerous screenshots can be found in 
+        [View](https://github.com/MSierag/SiteStorage/tree/main/static/images)
                       
-    3. As a visiting user, I want to know my position in the game.
-        
-        1. On the game page the user is presented with the question counter in the top left hand corner. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/play.png?raw=true)
-        2. The counter shows what question out of ten question in a game the user is currently playing.
-        3. A new question is automatically loaded one second after submitting the answer to the previous question.
-        4. An easily distinguishable "Home" button sits at the bottom of the screen should the user wish to abort the game and return to the home page [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true)
-        5. At the end of the game, the end of game page is automatically opened and the user is urged to submit their name to be added to the scoreboard. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/endgame.png?raw=true) 
-                   
-    4. As a visiting user, I want to compete.
-        
-        1. On the home page, the user is first presented with a button labelled "How to play?" [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnhowtoplay.png?raw=true) which when clicked opens a modal with instructions [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/modal.png?raw=true)        
-        2. On the home page, the user is presented with a button labelled "Let's Play" which when clicked opens the game page [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
-        3. The game page loads questions automatically  [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/play.png?raw=true)
-        4. Correctly answered questions are noted in [this](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/correct.png?raw=true) manner while incorrectly answered questions are noted in [this](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/incorrect.png?raw=true) manner.
-        4. At the end of the game the user is prompted to enter their name and submit their score.
-        5. Alternatively, the user can view the scoreboard or play again to improve their score.  
-
+    
 ### Known Issues
 
 -   On mobile devices with a screen narrower than 360px the contents of the card section on index.html pushed out of alignment.
@@ -364,28 +309,15 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+
 ## Credits
 
 ### Code
 
--   [Bootstrap5](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-
--   [YouTube](https://www.youtube.com/watch?v=MxrGPP4F8Sc): The game page with its JavaScript functionality was copied from this tutorial.   
-
--   I feel compelled to mention I spend countless hours wading through repositories and tutorials. I learned so much and was influenced by all of it. So thank you to all who have shared JavaScript code relating to quiz games online, this project would not have been possible without you.
-
-### Content
-
--   Inspiration for the questions was taken from [Wikipedia](https://en.wikipedia.org/wiki/Elfstedentocht).
-
-### Media
-
--   Background image for the home page by Steve Photography on [Shutterstock](https://www.shutterstock.com/image-photo/ice-skating-on-gouwzee-netherlands-86205925)
+-   The bulk of this app was built using the code for the mini-project of CodeInstitute. I added the Welcome page, took the registration and login functionality out of the navbar and added conditions so the buttons will only be visible to active users.
 
 ### Acknowledgements
 
--  Code Institure Student Care, Alexander Farrell for invaluable help.
-
--  Code Institue assessors for understanding and leniency. 
+-  Code Institure Student Care for invaluable help.
 
 -  Friends and family for feedback and helpful suggestions.
