@@ -1,7 +1,7 @@
 <h1 align="center">SiteStorage</h1>
 
-[View the live project here.](https://msierag.github.io/It-sil-heve/)
-[or view it here]() 
+[View the live project here.](https://github.com/MSierag/SiteStorage)
+[or view it here](https://site-storage.herokuapp.com/)
 
 ## Purpose of the website
 
@@ -35,27 +35,9 @@ The purpose of this app is to provide an easy to use platform for a construction
         -   The font used throughout the site are the standard fonts defined by MaterializeCSS.
 
 *   ### Wireframes
-Due to the high number of pages and limited content on them I decided against making creating wireframes in various formats as there would be very little difference between them.
-
-    -   Welcome page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevehome.png?raw=true)
-
-    -   Register page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevegame.png?raw=true)
-
-    -   Login page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilheveendgame.png?raw=true)
-
-    -   Profile page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevescoreboard.png?raw=true)
-
-    -   Items page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevesmartphone.png?raw=true)
-
-    -   Add Item page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
-
-    -   Edit Item page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
-
-    -   Locations page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
-
-    -   Add Location page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
-
-    -   Edit Location page wireframe - [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/wireframes/Itsilhevetablet.png?raw=true)
+Due to the high number of pages and limited content on them I decided against creating wireframes in various formats as there would be very little difference between them.
+The wireframes I did make can be viewed here [View](https://github.com/MSierag/SiteStorage/tree/main/static/images/wireframes)
+    
 
 ## Features
 -   Navbar at the top of the page is not visible on the Welcome page, but on all subsequent pages. The Register and Login pages 
