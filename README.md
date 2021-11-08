@@ -207,11 +207,13 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to val
 
 I used Google Lighthouse to audit the site's performance, accessibility, use of best practices and search engine optimization.
 
-Testing resulted in the following [score](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/lighthouse/lighthouse.png?raw=true):
--   Performance: 94%
+Testing resulted in the following [score](https://github.com/MSierag/SiteStorage/tree/main/static/images/testing/lighthouse.png?raw=true):
+-   Performance: 99%
 -   Accessibility: 92%
--   Best Practices: 93%
+-   Best Practices: 87%
 -   SEO: 91%
+
+The 87% in Best Practices was due to the deployed Heroku site not being secured ( http:// instead of https:// ). This unfortunately is beyond my control and is therefore left as it is. 
 
 ### Responsiveness testing
 
