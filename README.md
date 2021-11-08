@@ -22,13 +22,13 @@ The purpose of this app is to provide an easy to use platform for a construction
         
 -   ### Design
     -   #### Colour Scheme
-        -   There are five colours used throughout the site, the first two are the main colours and the remaining three are used for accents.
+        -   There are six colours used throughout the site, the first three are the main colours and the remaining three are used for accents.
         ##### Main colours
-           ![Coolors rendering of main colour scheme](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/maincolours.png?raw=true)
+           ![Coolors rendering of main colour scheme](https://github.com/MSierag/SiteStorage/tree/main/static/images/main-colours.jpg?raw=true)
             
-            The colour #009688 was chosen from the MaterializeCSS colour options as it approaches the colour used by the German multinational. The colour #26a69a is a variation on this colour. .
+            The colour #009688 was chosen from the MaterializeCSS colour options as it approaches the colour used by the German multinational, this is the main colour throughout the site. The colours #26a69a and #4db6ac are variations on this colour used where some additional contrast with the background was needed.
         ##### Accent colours
-           ![Coolors rendering of effect colourscheme](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/effectcolours.png?raw=true)
+           ![Coolors rendering of effect colourscheme](https://github.com/MSierag/SiteStorage/tree/main/static/images/accent-colours.jpg?raw=true)
             
             The colours #4caf50, #f4436, and #03a9f4 are accent colours. They are used on buttons throughout the site. 
     -   #### Typography
