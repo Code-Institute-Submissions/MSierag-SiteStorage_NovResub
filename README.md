@@ -24,11 +24,11 @@ The purpose of this app is to provide an easy to use platform for a construction
     -   #### Colour Scheme
         -   There are six colours used throughout the site, the first three are the main colours and the remaining three are used for accents.
         ##### Main colours
-           ![Coolors rendering of main colour scheme](https://github.com/MSierag/SiteStorage/tree/main/static/images/main-colours.jpg?raw=true)
+           ![MaterializeCSS rendering of main colour scheme](https://github.com/MSierag/SiteStorage/blob/main/static/images/main-colours.jpg?raw=true)
             
             The colour #009688 was chosen from the MaterializeCSS colour options as it approaches the colour used by the German multinational, this is the main colour throughout the site. The colours #26a69a and #4db6ac are variations on this colour used where some additional contrast with the background was needed.
         ##### Accent colours
-           ![Coolors rendering of effect colourscheme](https://github.com/MSierag/SiteStorage/tree/main/static/images/accent-colours.jpg?raw=true)
+           ![Coolors rendering of effect colourscheme](https://github.com/MSierag/SiteStorage/blob/main/static/images/accent-colours.png?raw=true)
             
             The colours #4caf50, #f4436, and #03a9f4 are accent colours. They are used on buttons throughout the site. 
     -   #### Typography
@@ -41,7 +41,7 @@ The wireframes I did make can be viewed here [View](https://github.com/MSierag/S
 ## Database schema
 The database for this website is run through MongeDB, the schema can be found below.
 
-![Dbdiagram.io rendering of the database schema](https://github.com/MSierag/SiteStorage/blob/main/static/images/dbschema.png)
+![Dbdiagram.io rendering of the database schema](https://github.com/MSierag/SiteStorage/blob/main/static/images/dbschema.png?raw=true)
 
 
 ## Features
@@ -212,7 +212,7 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to val
 
 I used Google Lighthouse to audit the site's performance, accessibility, use of best practices and search engine optimization.
 
-Testing resulted in the following [score](https://github.com/MSierag/SiteStorage/tree/main/static/images/testing/lighthouse.png?raw=true):
+Testing resulted in the following [score](https://github.com/MSierag/SiteStorage/blob/main/static/images/lighthouse.png?raw=true):
 -   Performance: 99%
 -   Accessibility: 92%
 -   Best Practices: 87%
@@ -246,12 +246,12 @@ It is listed as a known issue.
     3. As a visiting user, I want to be able to easily navigate throughout the site.
 
         1. The buttons on the navbar provide the user with clearly marked links to the respective pages. These buttons are the same across all pages. [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/btnletsplay.png?raw=true)
-        2. The various buttons on the respective pages are clearly marked and provide the expected functionality. The functionality is confirmed by flash messages. Numerous screenshots can be found in [View](https://github.com/MSierag/It-sil-heve/blob/master/assets/images/testing/userstories/homebtn.png?raw=true).
+        2. The various buttons on the respective pages are clearly marked and provide the expected functionality. The functionality is confirmed by flash messages.
         
     4. As a registered user, I want to be able to perform full CRUD functionality.
         
-        1. CRUD functionality is provided for items and locations. Once logged in the user has access to the buttons on the navbar which provide the desired functionality reinforced by flash messages. Numerous screenshots can be found in 
-        [View](https://github.com/MSierag/SiteStorage/tree/main/static/images)
+        1. CRUD functionality is provided for items and locations. Once logged in the user has access to the buttons on the navbar which provide the desired functionality reinforced by flash messages. Numerous screenshots can be found 
+        [here](https://github.com/MSierag/SiteStorage/tree/main/static/images/testing)
                       
     
 ### Known Issues
