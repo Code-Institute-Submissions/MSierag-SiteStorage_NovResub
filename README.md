@@ -184,7 +184,7 @@ The database for this website is run through MongeDB, the schema can be found be
     - MaterializeCSS was used to assist with the responsiveness and styling of the website.
 1. [jQuery:](https://jquery.com/)
     - jQuery was used for the functionality of the MaterializeCSS components.
-1. [Git](https://git-scm.com/)
+1. [Git:](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
@@ -194,8 +194,10 @@ The database for this website is run through MongeDB, the schema can be found be
     - Herokuapp is the platform used to display the project after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
-1. [Coolors](https://coolors.co/)
-    - Coolors was used to generate the palette used throughout the site.
+1. [Coolors:](https://coolors.co/)
+    - Coolors was used to generate the palette for accent colours used throughout the site.
+1. [Dbdiagram:](https://dbdiagram.io/)
+    - Dbdiagram was used to generate the rendering of the database schema.
 
 ## Testing
 
