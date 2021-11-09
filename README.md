@@ -13,10 +13,16 @@ The purpose of this app is to provide an easy to use platform for a construction
 
 -   ### User stories
 
-    -   #### Visiting User Goals
+    -   #### Owner Goals
 
         1. As an owner, I want to keep out unregistered visitors
+    
+    -   #### Visiting User Goals
+
         2. As a visiting user, I want to be able to register/login to use the site. 
+    
+    -   #### Registered User Goals
+
         3. As a registered user, I want to be able to easily navigate throughout the site.
         4. As a registered user, I want to be able to perform full CRUD functionality.        
         
@@ -233,7 +239,7 @@ It is listed as a known issue.
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### Owner Goal
+-   #### Owner Goals
     1. As an owner, I want to keep out unregistered visitors to the site.
         1. The Welcome page has only two buttons which allow a visitor to either register or login. There is no navigation bar to ensure there is no other way to enter the site than through these two buttons. 
        
@@ -244,8 +250,10 @@ It is listed as a known issue.
         1. Upon reaching the Welcome page, users are automatically greeted with the clean and easily readable page which contains the title heading "Welcome to SiteStorage" and underneath that the subheading "Please register / login" with two buttons to go to the page of their choice. [View](https://github.com/MSierag/SiteStorage/blob/main/static/images/testing/welcome.png?raw=true)
         2. Pushing these buttons leads to the corresponding page where the user can still change their mind and be redirected to the other page. There is no button on either of those pages leading back to the Welcome page as casual visitors are not intended to even reach this app. 
         3. Text has intentionally been kept to an absolute minimum.
-        
-    3. As a visiting user, I want to be able to easily navigate throughout the site.
+
+-   #### Registered User Goals
+
+    3. As a registered user, I want to be able to easily navigate throughout the site.
 
         1. The buttons on the navbar provide the user with clearly marked links to the respective pages. These buttons are the same across all pages. [View](https://github.com/MSierag/SiteStorage/blob/main/static/images/testing/user-navbar.png?raw=true)
         2. The various buttons on the respective pages are clearly marked and provide the expected functionality. The functionality is confirmed by flash messages.
