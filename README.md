@@ -296,11 +296,12 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 #### Create the environment variables
 
-1. Create a .gitignore file in the root directory of the project in Github
-2. Add the env.py file to the .gitignore file 
-3. Create the env.py file in the root directory of the project in Github
-4. Enter the environment variables in the env.py file:
+1. Create a `.gitignore` file in the root directory of the project in Github
+2. Add the `env.py` file to the `.gitignore` file 
+3. Create the `env.py` file in the root directory of the project in Github
+4. Enter the environment variables in the `env.py` file:
 
+```
     import os
 
     os.environ.setdefault("IP", "insert IP here")
@@ -308,6 +309,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     os.environ.setdefault("SECRET_KEY", "insert secret key")
     os.environ.setdefault("MONGO_URI", "insert mongo uri")
     os.environ.setdefault("MONGO_DBNAME", "insert mongo db name")
+```
 
 For more information on creating a MongoDB database click [here](https://docs.atlas.mongodb.com/)
 
@@ -321,8 +323,10 @@ Before creating the Heroku app, you must first set up two files needed for Herok
 
 To create these files, type the following in the Github terminal:
 
+```
 pip3 freeze --local > requirements.txt
 echo web: python app.py > Procfile
+```
 
 Open the Procfile and ensure there is no blank line at the end of the file as this may cause problems on Heroku.
 
@@ -337,15 +341,17 @@ Open the Procfile and ensure there is no blank line at the end of the file as th
 2. In the Deployment method section, select Github
 3. Enter your repository name and select Search, once it has found your repository select Connect
 4. Next, select the Settings tab on the Heroku dashboard
-5. Click Reveal Config Vars and enter the same environment variables from your env.py file
+5. Click Reveal Config Vars and enter the same environment variables from your `env.py` file
 6. Click Hide Config Vars
 7. In your Github terminal, use the following commands to push your requirements.txt and Procfile 
 
+```
     $ git add requirements.txt
     $ git commit -m "Add requirements.txt file."
     $ git add Procfile 
     $ git commit -m "Add procfile."
     $ git push 
+```
 8. On the Heroku dashboard, return to the Deploy tab and select Automatic deploys followed by Deploy Branch (main)
 
 Heroku will now start the deployment, this may take a while. When successfully deployed, you can select Open App which will open your live site in another tab.
