@@ -37,7 +37,12 @@ The purpose of this app is to provide an easy to use platform for a construction
 *   ### Wireframes
 Due to the high number of pages and limited content on them I decided against creating wireframes in various formats as there would be very little difference between them.
 The wireframes I did make can be viewed here [View](https://github.com/MSierag/SiteStorage/tree/main/static/images/wireframes)
-    
+
+## Database schema
+The database for this website is run through MongeDB, the schema can be found below.
+
+![Dbdiagram.io rendering of the database schema](https://github.com/MSierag/SiteStorage/blob/main/static/images/dbschema.png)
+
 
 ## Features
 -   Navbar at the top of the page is not visible on the Welcome page, but on all subsequent pages. The Register and Login pages 
@@ -292,7 +297,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 1. Login or register with MongoDB
 2. Create a cluster and a database
 3. Create three collections in the database: users, items and locations
-4. Add the key:value pairs for each of the collections per the [schema](#schema)
+4. Add the key:value pairs for each of the collections per the [schema](#database-schema)
 
 #### Create the environment variables
 
