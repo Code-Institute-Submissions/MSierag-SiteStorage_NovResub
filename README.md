@@ -260,7 +260,7 @@ It is listed as a known issue.
 
 The project is run on GitHub, but deployed to Heroku and uses MongeDB for the database:
 
-### Forking the GitHub Repository
+#### Forking the GitHub Repository
 
 By forking the GitHub Repository you make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository by using the following steps:
 
@@ -268,7 +268,7 @@ By forking the GitHub Repository you make a copy of the original repository on y
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
+#### Making a Local Clone
 
 1. Log in to GitHub and locate the [SiteStorage repository](https://github.com/)
 2. Under the repository name, click "Clone or download".
@@ -310,6 +310,47 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     os.environ.setdefault("MONGO_DBNAME", "insert mongo db name")
 
 For more information on creating a MongoDB database click [here](https://docs.atlas.mongodb.com/)
+
+### Heroku
+
+#### Prerequisites
+
+Before creating the Heroku app, you must first set up two files needed for Heroku to properly run:
+1. Requirements.txt (this contains all the packages required to run this project)
+2. Procfile (this specifies the commands that are executed by the app on startup)
+
+To create these files, type the following in the Github terminal:
+
+pip3 freeze --local > requirements.txt
+echo web: python app.py > Procfile
+
+Open the Procfile and ensure there is no blank line at the end of the file as this may cause problems on Heroku.
+
+#### Creating the app
+
+1. Sign in or create an account on [Heroku](https://www.heroku.com)
+2. Provide a unique app name, select region and click Create app
+
+#### Connect to Github repository
+
+1. On the Heroku dashboard, select the Deploy tab
+2. In the Deployment method section, select Github
+3. Enter your repository name and select Search, once it has found your repository select Connect
+4. Next, select the Settings tab on the Heroku dashboard
+5. Click Reveal Config Vars and enter the same environment variables from your env.py file
+6. Click Hide Config Vars
+7. In your Github terminal, use the following commands to push your requirements.txt and Procfile 
+
+    $ git add requirements.txt
+    $ git commit -m "Add requirements.txt file."
+    $ git add Procfile 
+    $ git commit -m "Add procfile."
+    $ git push 
+8. On the Heroku dashboard, return to the Deploy tab and select Automatic deploys followed by Deploy Branch (main)
+
+Heroku will now start the deployment, this may take a while. When successfully deployed, you can select Open App which will open your live site in another tab.
+
+For more information on Heroku deployment click [here](https://devcenter.heroku.com/start)
 
 ## Credits
 
