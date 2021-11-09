@@ -256,9 +256,9 @@ It is listed as a known issue.
 
 ## Deployment
 
-### GitHub Pages
+### GitHub
 
-The project is run on GitHub, but deployed to Heroku:
+The project is run on GitHub, but deployed to Heroku and uses MongeDB for the database:
 
 ### Forking the GitHub Repository
 
@@ -285,6 +285,31 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+### MongoDB
+
+#### Create the database
+
+1. Login or register with MongoDB
+2. Create a cluster and a database
+3. Create three collections in the database: users, items and locations
+4. Add the key:value pairs for each of the collections per the [schema](#schema)
+
+#### Create the environment variables
+
+1. Create a .gitignore file in the root directory of the project in Github
+2. Add the env.py file to the .gitignore file 
+3. Create the env.py file in the root directory of the project in Github
+4. Enter the environment variables in the env.py file:
+
+    import os
+
+    os.environ.setdefault("IP", "insert IP here")
+    os.environ.setdefault("PORT", "insert port here")
+    os.environ.setdefault("SECRET_KEY", "insert secret key")
+    os.environ.setdefault("MONGO_URI", "insert mongo uri")
+    os.environ.setdefault("MONGO_DBNAME", "insert mongo db name")
+
+For more information on creating a MongoDB database click [here](https://docs.atlas.mongodb.com/)
 
 ## Credits
 
