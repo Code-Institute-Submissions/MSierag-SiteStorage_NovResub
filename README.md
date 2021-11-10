@@ -269,6 +269,18 @@ It is listed as a known issue.
 -   On mobile devices with a screen narrower than 360px the contents of the card section on index.html pushed out of alignment.
     -   Text and text on buttons disappears from view as a result.
 
+### Bug fix
+
+During testing it turned out if a user logged out, clicking on the logo would return them to the All Items page anyway. This was fixed by wrapping the link in a condition depending on the user having a valid session cookie.
+
+```
+{% if session.user %}
+    <a href="{{ url_for('get_items') }}" class="brand-logo">Site storage</a>
+{% else %}
+    <a href="{{ url_for('welcome') }}" class="brand-logo">Site storage</a>
+{% endif %}
+```
+
 ## Deployment
 
 ### GitHub
