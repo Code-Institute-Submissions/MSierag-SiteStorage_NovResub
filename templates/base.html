@@ -21,7 +21,11 @@
     <!-- Top navbar -->
         <nav class="nav-extended text-shadow teal lighten-1">
             <div class="nav-wrapper">
+                {% if session.user %}
                 <a href="{{ url_for('get_items') }}" class="brand-logo">Site storage</a>
+                {% else %}
+                <a href="{{ url_for('welcome') }}" class="brand-logo">Site storage</a>
+                {% endif %}
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     {% if session.user %}
